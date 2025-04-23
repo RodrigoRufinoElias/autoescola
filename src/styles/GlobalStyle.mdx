@@ -1,0 +1,33 @@
+import { Meta, Canvas } from "@storybook/addon-docs/blocks";
+import * as GlobalStyle from "./GlobalStyle.stories";
+
+<Meta title="Styles/GlobalStyle" of={GlobalStyle} />
+
+# Global Style
+
+CSS resets and base stylesheets definition.
+
+```jsx
+const App = () => (
+  <>
+    <GlobalStyle />
+    <OtherComponents />
+  </>
+);
+```
+
+## Typography
+
+Basic global typography.
+
+### Headings
+
+All HTML headings, `h1` through `h6`, are available.
+
+<Canvas of={GlobalStyle.headings} />
+
+### Paragraph
+
+Styling form common text elements:
+
+<Canvas of={GlobalStyle.paragraph} />
